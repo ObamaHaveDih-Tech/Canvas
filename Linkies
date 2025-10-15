@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Canva Embed</title>
+    <style>
+        .embed-container {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-top: 168.6676%; /* Maintain original aspect ratio */
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Updated shadow for a modern look */
+            margin: 1.6em 0 0.9em;
+            transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+            will-change: transform;
+        }
+
+        .embed-container:hover {
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15); /* Subtle hover effect for smoothness */
+            transform: translateY(-2px); /* Lift effect on hover */
+        }
+
+        .embed-iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .embed-link {
+            display: block;
+            text-align: center;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            font-size: 0.875rem;
+            color: #007bff; /* Modern blue link color */
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .embed-link:hover {
+            color: #0056b3; /* Darker on hover for smooth interaction */
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="embed-container">
+        <iframe class="embed-iframe" loading="lazy" src="https://www.canva.com/design/DAG10lxKzfc/AScpUJqb-qxlA8tZUrqzVg/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen"></iframe>
+    </div>
+    <a class="embed-link" href="https://www.canva.com/design/DAG10lxKzfc/AScpUJqb-qxlA8tZUrqzVg/view?utm_content=DAG10lxKzfc&utm_campaign=designshare&utm_medium=embeds&utm_source=link" target="_blank" rel="noopener">Truffled</a> by Butandingl Bruhbreh
+</body>
+</html>
