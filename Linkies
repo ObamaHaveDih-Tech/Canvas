@@ -5,6 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modern Canva Embed</title>
     <style>
+        body {
+            background-color: #ffffff; /* Light mode background */
+            color: #000000; /* Light mode text */
+            transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #121212; /* Dark mode background */
+                color: #ffffff; /* Dark mode text */
+            }
+        }
+
         .embed-container {
             position: relative;
             width: 100%;
@@ -12,15 +25,25 @@
             padding-top: 168.6676%; /* Maintain original aspect ratio */
             overflow: hidden;
             border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Updated shadow for a modern look */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Light mode shadow */
             margin: 1.6em 0 0.9em;
             transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transitions */
             will-change: transform;
         }
 
         .embed-container:hover {
-            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15); /* Subtle hover effect for smoothness */
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15); /* Light mode hover shadow */
             transform: translateY(-2px); /* Lift effect on hover */
+        }
+
+        @media (prefers-color-scheme: dark) {
+            .embed-container {
+                box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1); /* Dark mode shadow */
+            }
+
+            .embed-container:hover {
+                box-shadow: 0 6px 16px rgba(255, 255, 255, 0.15); /* Dark mode hover shadow */
+            }
         }
 
         .embed-iframe {
@@ -39,14 +62,24 @@
             text-align: center;
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             font-size: 0.875rem;
-            color: #007bff; /* Modern blue link color */
+            color: #007bff; /* Light mode link color */
             text-decoration: none;
             transition: color 0.3s ease;
         }
 
         .embed-link:hover {
-            color: #0056b3; /* Darker on hover for smooth interaction */
+            color: #0056b3; /* Light mode hover color */
             text-decoration: underline;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            .embed-link {
+                color: #4da6ff; /* Dark mode link color */
+            }
+
+            .embed-link:hover {
+                color: #80bfff; /* Dark mode hover color */
+            }
         }
     </style>
 </head>
